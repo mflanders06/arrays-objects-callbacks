@@ -15,6 +15,12 @@
 */
 
 //Code here
+let me = {
+  name: 'Mike',
+  age: 40
+}
+
+//console.log(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -24,6 +30,14 @@
 */
 
 //Code here
+let favoriteThings = {
+  band: 'They Might Be Giants',
+  food: 'Pizza',
+  person: 'Allison',
+  book: 'Mistborn',
+  movie: 'Return of the Jedi',
+  holiday: 'Thanksgiving'
+}
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car
@@ -31,12 +45,14 @@
 */
 
 //Code here
-
+favoriteThings.car = 'Tesla Model S';
+favoriteThings.brand = 'Meadow Gold';
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 //Code here
 
 ////////// PROBLEM 3 //////////
@@ -50,13 +66,18 @@
 */
 
 //Code here
+let backPack = {};
+let item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'black';
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+//console.log(backPack);
+//alert(backPack);
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
@@ -83,7 +104,8 @@ var user2 = {
   name -> 'Bryan G. Smith' and email -> 'bryan.smith@devmounta.in'.
   Make that change without modifying the original object code above.
 */
-
+user2.name = 'Bryan G. Smith';
+user2.email = 'bryan.smith@devmounta.in';
 //Code Here
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
@@ -96,18 +118,22 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {};
 
 /*
   Now add two methods (functions that are properties on objects) to your methodCollection object.
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console.
 */
+methodCollection.alertHello = function(){ 'hello' };
+methodCollection.logHello = function(){ 'logHello' };
 
 //Code Here
 
 /*
   Now call your alertHello and logHello methods.
 */
-
+methodCollection.alertHello();
+methodCollection.logHello();
 //Code Here
 
 ////////// PROBLEM 6 //////////
