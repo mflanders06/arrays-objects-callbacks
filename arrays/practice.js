@@ -93,8 +93,9 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 function evenFinder(nums1){
   let innerResult = [];
   for (i = 0; i < nums1.length; i++){
-    if (nums % 2 === 0){
+    if (nums1[i] % 2 === 0){
       innerResult.push(nums1[i]);
+
     }
   }
   return innerResult
